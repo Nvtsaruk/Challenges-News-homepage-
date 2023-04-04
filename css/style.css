@@ -128,13 +128,17 @@ h1 {
     border: none;
     color: var(--OFF-WHITE);
     text-transform: uppercase;
-    padding: 20px 30px;
+    padding: 17px 33px;
     background-color: var(--SOFT-RED);
 }
 
 .news {
     background-color: #000;
     color: var(--OFF-WHITE);
+    padding: 30px 20px;
+}
+.news__article {
+    border-bottom: 1px solid white;
 }
 
 .news h2 {
