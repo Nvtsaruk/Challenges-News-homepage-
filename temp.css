@@ -1,61 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
-/* || RESET */
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-input, 
-button, 
-textarea {
-    font: inherit;
-}
-
-/* || VARIABLES */
-
-:root{
-    /* || COLORS */
-    --SOFT-ORANGE: hsl(35, 77%, 62%);
-    --SOFT-RED: hsl(5, 85%, 63%);
-    --OFF-WHITE: hsl(36, 100%, 99%);
-    --GRAYISH-BLUE: hsl(233, 8%, 79%);
-    --DARK-GRAYISH-BLUE: hsl(236, 13%, 42%);
-    --VERY-DARK-BLUE: hsl(240, 100%, 5%);
-
-
-}
-
-
-body {
-    font-family: 'Inter', sans-serif;
-}
-/* * {
-    outline: 1px solid red;
-  } */
-.header {
-    /* width: 375px; */
-}
+/* || MAIN STYLES */
 .header-title-line {
     padding: 1.75rem 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+
 .logo {
     width: 45px;
     height: 28px;
 }
+
 .menu-button {
     background-color: transparent;
     border: none;
@@ -107,22 +63,25 @@ body {
 :is(header:hover, header:focus-within) nav {
     display: block;
 }
-.nav {
+
+nav {
     display: none;
 }
+
 .main {
-    /* width: 375px; */
     padding: 1.75rem 1rem;
 }
-.main__article img {
-    width: 343px;
-    height: 300px;
-}
+
 h1 {
     font-size: 2.5em;
     margin: 26px 45px 0 0;
     line-height: 1em;
 }
+.main__article img {
+    width: 343px;
+    height: 300px;
+}
+
 .main__article-p {
     color: var(--DARK-GRAYISH-BLUE);
     margin-top: 24px;
@@ -130,6 +89,7 @@ h1 {
     letter-spacing: 0.03em;
     font-size: 14px;
 }
+
 .main__article-button {
     border: none;
     color: var(--OFF-WHITE);
@@ -149,48 +109,6 @@ h1 {
 .news h2 {
     color: var(--SOFT-ORANGE);
 }
-.news h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
 .news__article {
     border-bottom: 1px solid white;
-    margin-top: 37px;
-    margin-bottom: 30px;
-}
-.news__article:last-child {
-    border: none;
-}
-.news__article p {
-    margin-top: 16px;
-    margin-bottom: 35px;
-}
-.recent {
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-}
-.recent__article {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1em;
-    margin-top: 32px;
-}
-.recent__article h3 {
-    font-size: 16px;
-    font-weight: 900;
-    margin-top: 16px;
-}
-.recent__article p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 15.68px;
-    letter-spacing: -3.5%;
-    color: #626169;
-    margin-top: 16px;
-}
-.counter {
-    color: #C7C5CB;
-    font-size: 32px;
-    font-weight: 700;
 }

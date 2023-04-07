@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-<header>
+<header class="header">
   <section class="header-title-line">
     <figure>
       <img src="assets/images/logo.svg" alt="Logo" width="65" height="40" class="logo">
@@ -25,7 +25,7 @@
         <div class="menu-icon"></div>
     </button>
   </section>
-  <nav>
+  <nav class="nav">
     <ul>
       <li>Home</li>
       <li>New</li>
@@ -38,12 +38,12 @@
 <main class="main">
   <article class="main__article">
     <figure>
-      <img src="/assets/images/image-web-3-mobile.jpg" alt="web 3.0 image" width="686" height="600">
+      <img src="/assets/images/image-web-3-mobile.jpg" alt="web 3.0 image" width="186" height="600">
     </figure>
-    <h1>The Bright Future of Web 3.0?</h1>
-    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    <h1 class="main__article-h1">The Bright Future of Web 3.0?</h1>
+    <p class="main__article-p">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
       But is it really fulfilling its promise?</p>
-    <button>Read more</button>
+    <button class="main__article-button">Read more</button>
   </article>
   <div class="news">
     <h2>New</h2> 
@@ -61,21 +61,30 @@
     </article>
   </div>
 
-  <div>
-    <article>
-      <div>01</div>
-      <h3>Reviving Retro PCs</h3>
-      <p>What happens when old PCs are given modern upgrades?</p>
+  <div class="recent">
+    <article class="recent__article">
+      <img src="/assets/images/image-retro-pcs.jpg" alt="retro pc">
+      <div class="recent__article-description">
+        <div class="counter">01</div>
+        <h3>Reviving Retro PCs</h3>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
     </article>
-    <article>
-      <div>02</div>
-      <h3>Top 10 Laptops of 2022</h3>
-      <p>Our best picks for various needs and budgets.</p>
+    <article class="recent__article">
+      <img src="/assets/images/image-top-laptops.jpg" alt="">
+      <div class="recent__article-description">
+        <div class="counter">02</div>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
     </article>
-    <article>
-      03
-      <h3>The Growth of Gaming</h3>
-      <p>How the pandemic has sparked fresh opportunities.</p>
+    <article class="recent__article">
+      <img src="/assets/images/image-gaming-growth.jpg" alt="">
+      <div class="recent__article-description">
+        <div class="counter">03</div>
+        <h3>The Growth of Gaming</h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
     </article>
   </div>
 </main>
@@ -86,4 +95,5 @@
   </div>
 </footer>
 </body>
+<script src="./Script/script.js"></script>
 </html>
