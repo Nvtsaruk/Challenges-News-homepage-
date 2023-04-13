@@ -39,6 +39,8 @@ textarea {
 
 body {
     font-family: 'Inter', sans-serif;
+    color: var(--DARK-GRAYISH-BLUE);
+    padding: 25px 15px 0;
 }
 /* * {
     outline: 1px solid red;
@@ -144,8 +146,13 @@ body {
     padding: 1.75rem 1rem;
 }
 .main__article img {
-    width: 343px;
-    height: 300px;
+    /* width: 343px;
+    height: 300px; */
+    display: block;
+    max-width:343px;
+    max-height:300px;
+    width: auto;
+    height: auto;
 }
 h1 {
     font-size: 2.5em;
@@ -165,7 +172,7 @@ h1 {
     text-transform: uppercase;
     padding: 17px 33px;
     background-color: var(--SOFT-RED);
-    margin-top: 30px;
+    margin-top: 32px;
 }
 
 .news {
@@ -184,15 +191,15 @@ h1 {
 }
 .news__article {
     border-bottom: 1px solid white;
-    margin-top: 37px;
-    margin-bottom: 30px;
+    margin-top: 36px;
+    margin-bottom: 32px;
 }
 .news__article:last-child {
     border: none;
 }
 .news__article p {
     margin-top: 16px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 }
 .recent {
     display: flex;
@@ -227,7 +234,11 @@ h1 {
 @media (min-width: 374px){
     .header {
         display: flex;
-        justify-content: space-between;
+        width: 100%;
+        max-width: 1110px;
+        margin-top: 75px;
+        margin-left: 165px;
+        margin-right: 165px;
     }
     .logo {
         width: 65px;
@@ -240,12 +251,48 @@ h1 {
         display: block;
         position: relative;
         height: auto;
+        width: 100%;
     }
     .nav ul {
         display: flex;
-        margin: 0;
+        justify-content: space-between;
+        margin: 0 20px;
+        gap: 38px;
+    }
+    .nav a {
+        text-decoration: none;
+        color: #84818A;
+        font-size: 16px;
+        font-weight: 400;
+        cursor:pointer;
+    }
+    .main {
+        max-width: 1110px;
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+    .main__article {
+        max-width: 730px;
     }
     .main__article img {
-        width: 730px;
+        max-width: 730px;
     }
+    .main__section {
+        display: flex;
+        gap: 1rem;
+    }
+    .news {
+        margin: 0;
+    }
+    .recent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer {
+        max-width: 1110px;
+        margin-left: 165px;
+        margin-right: 165px;
+        margin-bottom: 130px;
+    }
+
 }
